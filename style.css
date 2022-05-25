@@ -4,8 +4,13 @@
 
 body {
 	font-family: "Poppins", sans-serif;
-    background-color:rgb(221, 225, 226)
+  background-color:rgb(221, 225, 226)
   }
+
+p{
+  text-align:center;
+}
+
 
 .wrapper {
     display: flex;
@@ -16,7 +21,9 @@ body {
     position: static;
 }
 
-
+.selectSym{
+  padding:20px;
+}
 #floating{
 	-webkit-border-radius: 10px;
 	border-radius: 30px;
@@ -45,29 +52,31 @@ td {
 table {
 	border-collapse: collapse;
 	position: relative;
-    margin:auto;
+  margin:auto;
+  border-radius: 10px;
 }
 
 button{
-    background-color: #188abe;
+  font-family: "Poppins", sans-serif;
+  background-color: #188abe;
 	border: none;
 	color: white;
-	padding: 20px 50px;
-    font-size: 16px;
+	padding: 10px 50px;
 	text-align: center;
-    font-weight: bold;
+  font-weight: bold;
 	text-decoration: none;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 20px;
 	border-radius: 5px;
 	margin: 10px;
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
-.button:hover {
-    background-color: #1e8b4b;
+button:hover {
+  background-color: #236d8f;
 }
 
 .endgame {
@@ -94,7 +103,6 @@ button{
     width: 100%;
     background-color: #1b1f20;
     line-height: 1.3;
-    font-family: Menlo, monospace;
     
 }
 
@@ -105,16 +113,14 @@ ul {
     justify-items: center;
     margin: auto;
     list-style-type: none;
+
   }
+
 @media (min-width: 500px) {
   ul {
     grid-auto-flow: column;
   }
-}
-  li:last-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+
   a {
     color: white;
     text-decoration: none;
@@ -123,11 +129,8 @@ ul {
   
   a:hover {
     box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+    transition-duration: 0.4s;
+
   }
   
-  li:last-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  
-  
+}
